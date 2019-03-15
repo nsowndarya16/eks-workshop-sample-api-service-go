@@ -9,7 +9,7 @@ phases:
       - mv ./aws-iam-authenticator /usr/local/bin/aws-iam-authenticator
       - chmod +x /usr/local/bin/kubectl 
       - chmod +x /usr/local/bin/aws-iam-authenticator
-      - export PATH=/usr/local/bin/:$PATH
+      - export PATH=/usr/local/bin:$PATH
       - apt-get update && apt-get -y install jq python3-pip python3-dev && pip3 install --upgrade awscli
   pre_build:
       commands:
